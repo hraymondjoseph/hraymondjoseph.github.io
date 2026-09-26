@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raymond (Ray) Joseph</title>
+  <meta name="description" content="Raymond (Ray) Joseph — ML / research engineer working on AI safety, LLM guardrails, evaluation, and red teaming. Based in Austin, TX." />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+  <nav class="top">
+    <div class="inner">
+      <span class="brand">Ray Joseph</span>
+      <span class="links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      </span>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <!-- ===== Profile header ===== -->
+    <header class="profile" id="about">
+      <div>
+        <img class="avatar" src="assets/profile.jpg" alt="Raymond Joseph"
+             onerror="this.style.background='var(--card)';this.alt='Add assets/profile.jpg';" />
+        <div class="socials">
+          <a href="mailto:raymond.joseph.7@gmail.com">✉ Email</a>
+          <a href="assets/Ray_Joseph_CV.pdf">📄 CV</a>
+          <a href="https://scholar.google.com/citations?user=dUWLFE0AAAAJ&hl=en">Scholar</a>
+          <!-- TODO: replace # with your real profile URLs -->
+          <a href="#" data-social="linkedin">in LinkedIn</a>
+          <a href="#" data-social="github">GitHub</a>
+        </div>
+      </div>
+      <div class="sidecard intro">
+        <h1>Raymond (Ray) Joseph</h1>
+        <p class="role">Staff ML / Research Engineer — AI Safety</p>
+        <p class="affil">LLM guardrails · evaluation · red teaming · Austin, TX</p>
+
+        <p>I'm a machine-learning engineer working on AI safety: LLM guardrails,
+        evaluation frameworks, and red teaming. Over the past decade I've built and
+        deployed ML systems across finance, financial regulation, an early-stage
+        startup, and high-assurance government environments, with a recent focus on
+        making large language models safer and more reliable in production.</p>
+
+        <p>I'm currently a Staff Software Engineer at <strong>LegionIntel</strong>, where
+        I work on retrieval-augmented generation and LLM safety systems. Before that I
+        founded <strong>Modguard.ai</strong>, an AI-guardrails startup.
+        Earlier I led ML-platform and model-governance work at <strong>FINRA</strong> and
+        spent six years in quantitative analytics at <strong>Barclays</strong> in London.</p>
+
+        <p>My interests sit at the intersection of adversarial robustness, alignment,
+        and evaluation — how we measure whether a model is safe, and how we build
+        systems that stay reliable under adversarial pressure.</p>
+      </div>
+    </header>
+
+    <!-- ===== Research interests ===== -->
+    <section id="research">
+      <h2 class="section">Research &amp; focus areas</h2>
+      <div class="tags">
+        <span class="tag">LLM red teaming &amp; jailbreak taxonomies</span>
+        <span class="tag">Guardrails: prompt-injection, PII, toxicity, factuality</span>
+        <span class="tag">Alignment (RLHF, DPO, Constitutional AI)</span>
+        <span class="tag">Adversarial robustness</span>
+        <span class="tag">LLM-as-judge &amp; automated evaluation</span>
+        <span class="tag">Uncertainty quantification</span>
+        <span class="tag">RAG architecture</span>
+        <span class="tag">Model reliability &amp; safety-critical validation</span>
+      </div>
+    </section>
+
+    <!-- ===== News ===== -->
+    <section id="news">
+      <h2 class="section">News</h2>
+      <ul class="news">
+        <li><span class="date">Dec 2023</span><span>Joined <strong>LegionIntel</strong> as Staff Software Engineer, working on RAG and LLM safety systems.</span></li>
+        <li><span class="date">2023</span><span>Founded <strong>Modguard.ai</strong>, an AI-guardrails startup building trustworthy enterprise knowledge agents.</span></li>
+        <li><span class="date">2021</span><span>Joined <strong>FINRA</strong> as ML tech lead / product lead for model governance and fairness.</span></li>
+      </ul>
+      <p class="note">News dates are approximate; edit the entries in <code>index.html</code> under the "News" section.</p>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience">
+      <h2 class="section">Selected experience</h2>
+
+      <div class="item">
+        <div class="head">
+          <span class="org">LegionIntel — Staff Software Engineer</span>
+          <span class="when">2023 – present · Austin, TX</span>
+        </div>
+        <ul>
+          <li>Build retrieval-augmented generation systems with hierarchical chunking and hybrid search for high-assurance environments.</li>
+          <li>Develop LLM evaluation and red-teaming pipelines: automated adversarial testing, jailbreak detection, and LLM-as-judge scoring.</li>
+          <li>Design multi-layer guardrails — prompt-injection defense, PII detection and redaction, toxicity and factuality filtering — under strict data-boundary and compliance requirements.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="head">
+          <span class="org">Modguard.ai — Founder</span>
+          <span class="when">2023 · Chicago, IL</span>
+        </div>
+        <ul>
+          <li>Founded an AI-safety startup building guardrail systems for conversational AI and internal LLM tools.</li>
+          <li>Developed a modular guardrail framework with real-time content filtering, contextual policy enforcement, and adversarial-robustness testing.</li>
+          <li>Built LoRA-fine-tuned safety classifiers and preference-aligned models; deployed with enterprise clients.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="head">
+          <span class="org">FINRA — ML Tech Lead / Product Lead</span>
+          <span class="when">2021 – 2023 · Chicago, IL</span>
+        </div>
+        <ul>
+          <li>Led ML-platform work on model safety, fairness, and regulatory compliance across member firms.</li>
+          <li>Built bias-detection and model-auditing pipelines with human-in-the-loop review, plus drift monitoring.</li>
+          <li>Designed responsible-AI oversight workflows: model cards, transparency reporting, and accountability mechanisms.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="head">
+          <span class="org">Barclays Capital — Quantitative Analytics (VP)</span>
+          <span class="when">2015 – 2021 · London, UK</span>
+        </div>
+        <ul>
+          <li>Designed ML systems for trading recommendations with anomaly detection and confidence calibration across production models.</li>
+          <li>Built monitoring and alerting for model degradation and data drift; contributed to model-risk-management standards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education">
+      <h2 class="section">Education</h2>
+      <div class="item">
+        <div class="head">
+          <span class="org">IIT Madras — Dual Degree (B.Tech + M.Tech), Electrical Engineering</span>
+          <span class="when">2010 – 2015</span>
+        </div>
+        <div class="title">Master's thesis: estimating traffic-congestion costs in Delhi using AI-based simulation.</div>
+      </div>
+      <div class="item">
+        <div class="head">
+          <span class="org">INSA Lyon — Exchange, Big Data &amp; Database Systems</span>
+          <span class="when">2013 – 2014</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="head">
+          <span class="org">TU München — Erasmus Exchange, Quantitative Analytics</span>
+          <span class="when">2014</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section id="publications">
+      <h2 class="section">Publications &amp; research</h2>
+      <p style="margin:0 0 18px"><a class="btn" href="https://scholar.google.com/citations?user=dUWLFE0AAAAJ&hl=en">Google Scholar profile ↗</a></p>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2017</span>arXiv</div>
+        <div>
+          <p class="ptitle">Congestion costs incurred on Indian roads: a case study for New Delhi</p>
+          <p class="authors">Neema Davis, <span class="me">Harry Raymond Joseph</span>, Gaurav Raina, Krishna Jagannathan</p>
+          <div class="tags"><span class="tag">Transportation modeling</span><span class="tag">Simulation</span></div>
+          <div class="btns"><a class="btn" href="https://arxiv.org/abs/1708.08984">arXiv:1708.08984</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2015</span>COMSNETS</div>
+        <div>
+          <p class="ptitle">Cost estimates for road congestion in Delhi: projections and recommendations</p>
+          <p class="authors"><span class="me">H. R. Joseph</span></p>
+          <p class="note" style="margin:0 0 6px">7th Intl. Conf. on Communication Systems and Networks (COMSNETS)</p>
+          <div class="tags"><span class="tag">Transportation modeling</span></div>
+          <div class="btns"><a class="btn" href="https://ieeexplore.ieee.org/abstract/document/7098711/">IEEE</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2015</span>ICSE</div>
+        <div>
+          <p class="ptitle">Software development risk management: using machine learning for generating risk prompts <span class="note">(poster)</span></p>
+          <p class="authors"><span class="me">H. R. Joseph</span></p>
+          <p class="note" style="margin:0 0 6px">37th IEEE/ACM Intl. Conf. on Software Engineering (ICSE) — poster</p>
+          <div class="tags"><span class="tag">ML for software engineering</span><span class="tag">Risk</span></div>
+          <div class="btns"><a class="btn" href="https://ieeexplore.ieee.org/abstract/document/7203092/">IEEE</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2014</span>FSE</div>
+        <div>
+          <p class="ptitle">Software programmer management: a machine learning and human–computer interaction framework for optimal task assignment</p>
+          <p class="authors"><span class="me">H. R. Joseph</span></p>
+          <p class="note" style="margin:0 0 6px">22nd ACM SIGSOFT Intl. Symposium on Foundations of Software Engineering (FSE), companion</p>
+          <div class="tags"><span class="tag">ML for software engineering</span><span class="tag">HCI</span></div>
+          <div class="btns"><a class="btn" href="https://dl.acm.org/doi/abs/10.1145/2635868.2661684">ACM DOI</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2014</span>CICSyN</div>
+        <div>
+          <p class="ptitle">An intelligent discrete-event Monte-Carlo implementation algorithm: application to the simulation of Indo-China policy as a Bayesian network</p>
+          <p class="authors"><span class="me">Harry Raymond Joseph</span>, Arathi Sunder Mary</p>
+          <p class="note" style="margin:0 0 6px">6th Intl. Conf. on Computational Intelligence, Communication Systems and Networks (CICSyN)</p>
+          <div class="tags"><span class="tag">Monte-Carlo simulation</span><span class="tag">Bayesian networks</span></div>
+          <div class="btns"><a class="btn" href="https://doi.org/10.1109/CICSYN.2014.25">DOI</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2014</span>ES</div>
+        <div>
+          <p class="ptitle">Business artifact modeling: a framework for business artifacts in traditional database systems</p>
+          <p class="authors"><span class="me">Harry Raymond Joseph</span>, Youakim Badr</p>
+          <p class="note" style="margin:0 0 6px">Enterprise Systems Conference (ES)</p>
+          <div class="tags"><span class="tag">Data systems</span></div>
+          <div class="btns"><a class="btn" href="https://doi.org/10.1109/ES.2014.70">DOI</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2014</span>GHTC-SAS</div>
+        <div>
+          <p class="ptitle">Promoting education: a machine-learning framework for feedback and monitoring e-learning impact</p>
+          <p class="authors"><span class="me">H. R. Joseph</span></p>
+          <p class="note" style="margin:0 0 6px">IEEE Global Humanitarian Technology Conference — South Asia Satellite</p>
+          <div class="tags"><span class="tag">ML for education</span></div>
+          <div class="btns"><a class="btn" href="https://ieeexplore.ieee.org/abstract/document/6967592/">IEEE</a></div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div class="venue"><span class="yr">2014</span>ECMI</div>
+        <div>
+          <p class="ptitle">Combining traditional optimization and modern machine learning: a case in ATM replenishment optimization</p>
+          <p class="authors"><span class="me">H. R. Joseph</span></p>
+          <p class="note" style="margin:0 0 6px">European Consortium for Mathematics in Industry (Springer, book chapter)</p>
+          <div class="tags"><span class="tag">Optimization</span><span class="tag">ML</span></div>
+          <div class="btns"><a class="btn" href="https://link.springer.com/chapter/10.1007/978-3-319-23413-7_146">Springer</a></div>
+        </div>
+      </div>
+
+      <p class="note" style="margin-top:18px">Publication list drawn from the verified Google Scholar profile above. The ICSE and FSE items are a poster and a companion-track paper, respectively.</p>
+    </section>
+
+    <footer>
+      <p>© <span id="yr"></span> Raymond Joseph · Built as a static site, hosted on GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    // Theme toggle with persistence
+    const root = document.documentElement, tbtn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved) root.setAttribute('data-theme', saved);
+    const sync = () => tbtn.textContent = root.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+    sync();
+    tbtn.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      sync();
+    });
+  </script>
+</body>
+</html>
