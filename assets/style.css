@@ -133,6 +133,8 @@ h2.section {
 .pub .venue { text-align: right; color: var(--muted); font-size: 14px; }
 .pub .venue .yr { display: block; font-weight: 700; color: var(--fg); font-size: 22px; }
 .pub .ptitle { font-weight: 600; margin: 0 0 3px; }
+.pub .ptitle a { color: inherit; text-decoration: none; }
+.pub .ptitle a:hover { text-decoration: underline; text-decoration-color: var(--muted); }
 .pub .authors { color: var(--muted); font-size: 15px; margin: 0 0 8px; }
 .pub .authors .me { color: var(--fg); font-weight: 700; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 6px; }
