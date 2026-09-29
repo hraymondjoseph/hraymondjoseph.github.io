@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>What Is a Conversation Made Of? A Reusable Semantic–Relational State Across Safety Tasks — Raymond Joseph</title>
+  <meta name="description" content="A single lightweight conversational state — entities, actions, goals, constraints and their typed relations — induced once, frozen, and reused across LLM safety tasks: jailbreak detection, agent action authorization, and topic-shift prediction." />
+  <link rel="canonical" href="https://hraymondjoseph.github.io/papers/conversation-semantic-state/" />
+
+  <!-- ===== Google Scholar / Highwire citation tags ===== -->
+  <meta name="citation_title" content="What Is a Conversation Made Of? A Reusable Semantic–Relational State Across Safety Tasks" />
+  <meta name="citation_author" content="Joseph Harry, Raymond" />
+  <meta name="citation_author" content="Mao, Yixin" />
+  <meta name="citation_author" content="Wu, Chien-Sheng" />
+  <meta name="citation_publication_date" content="2026" />
+  <meta name="citation_online_date" content="2026" />
+  <meta name="citation_technical_report_institution" content="Salesforce AI Research" />
+  <meta name="citation_publisher" content="Salesforce AI Research" />
+  <meta name="citation_pdf_url" content="https://hraymondjoseph.github.io/assets/conversation-semantic-state.pdf" />
+  <meta name="citation_abstract_html_url" content="https://hraymondjoseph.github.io/papers/conversation-semantic-state/" />
+  <meta name="citation_language" content="en" />
+  <meta name="citation_keywords" content="LLM safety; jailbreak detection; agent action authorization; conversational state; prompt injection" />
+
+  <!-- ===== Open Graph / Twitter ===== -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="What Is a Conversation Made Of? A Reusable Semantic–Relational State Across Safety Tasks" />
+  <meta property="og:description" content="A single lightweight conversational state, induced once, frozen, and reused across independent LLM safety tasks under distribution shift." />
+  <meta property="og:url" content="https://hraymondjoseph.github.io/papers/conversation-semantic-state/" />
+  <meta property="og:site_name" content="Raymond (Ray) Joseph" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="What Is a Conversation Made Of? A Reusable Semantic–Relational State Across Safety Tasks" />
+  <meta name="twitter:description" content="A single lightweight conversational state, induced once, frozen, and reused across independent LLM safety tasks under distribution shift." />
+
+  <link rel="stylesheet" href="../../assets/style.css" />
+
+  <!-- ===== Structured data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "What Is a Conversation Made Of? A Reusable Semantic–Relational State Across Safety Tasks",
+    "name": "What Is a Conversation Made Of? A Reusable Semantic–Relational State Across Safety Tasks",
+    "author": [
+      { "@type": "Person", "name": "Raymond Joseph Harry" },
+      { "@type": "Person", "name": "Yixin Mao" },
+      { "@type": "Person", "name": "Chien-Sheng Wu" }
+    ],
+    "datePublished": "2026",
+    "publisher": { "@type": "Organization", "name": "Salesforce AI Research" },
+    "inLanguage": "en",
+    "url": "https://hraymondjoseph.github.io/papers/conversation-semantic-state/",
+    "sameAs": "https://hraymondjoseph.github.io/assets/conversation-semantic-state.pdf",
+    "keywords": ["LLM safety", "jailbreak detection", "agent action authorization", "conversational state", "prompt injection"],
+    "abstract": "Multi-turn safety prediction tasks in an agentic system all rely on the same underlying state that accumulates over a conversation: what has been introduced and remains salient, what the participants are trying to accomplish, what restricts them, and how these relate. We show that a single lightweight conversational state can be induced once, frozen, and reused across independent safety tasks and across the distribution shifts each task encounters, without retraining the representation."
+  }
+  </script>
+</head>
+<body>
+  <nav class="top">
+    <div class="inner">
+      <a class="brand" href="../../" style="color:inherit">Ray Joseph</a>
+      <span class="links">
+        <a href="../../#about">About</a>
+        <a href="../../#publications">Publications</a>
+        <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      </span>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <article class="paper">
+      <p class="note" style="margin:32px 0 10px"><a href="../../#publications">← Publications</a></p>
+
+      <p class="paper-venue">Preprint · 2026 · Salesforce AI Research</p>
+      <h1 class="paper-title">What Is a Conversation Made Of? A Reusable Semantic–Relational State Across Safety Tasks</h1>
+      <p class="paper-authors"><span class="me">Raymond Joseph Harry</span>, Yixin Mao, Chien-Sheng Wu</p>
+
+      <div class="tags">
+        <span class="tag">LLM safety</span>
+        <span class="tag">Jailbreak detection</span>
+        <span class="tag">Agent action authorization</span>
+        <span class="tag">Conversational state</span>
+        <span class="tag">Prompt injection</span>
+      </div>
+
+      <div class="btns" style="margin-top:16px">
+        <a class="btn" href="../../assets/conversation-semantic-state.pdf">📄 PDF</a>
+        <a class="btn" href="#bibtex">BibTeX</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=dUWLFE0AAAAJ&hl=en">Google Scholar ↗</a>
+      </div>
+
+      <section>
+        <h2 class="section">Abstract</h2>
+        <div class="abstract">
+          <p>Multi-turn safety prediction tasks in an agentic system all rely on the same underlying
+          state that accumulates over a conversation: what has been introduced and remains salient,
+          what the participants are trying to accomplish, what restricts them, and how these relate.
+          Systems for these tasks are typically trained and evaluated one task at a time, even though
+          multi-task and frozen-backbone architectures are common more broadly. We show that a single
+          lightweight conversational state can be induced once, frozen, and reused across independent
+          safety tasks and across the distribution shifts each task encounters, without retraining the
+          representation.</p>
+
+          <p>A shared mention encoder (M1) and a graph inducer (M2) together extract open-vocabulary
+          entity, action, goal, and constraint nodes with persistent identity and typed relations; this
+          M1+M2 inducer is trained once (419M parameters), frozen, and read by three small
+          (sub-million-parameter) readers at the granularity of a whole trajectory, a single proposed
+          action, and a single turn boundary. Our central evidence is controlled transfer under
+          distribution shift rather than a single benchmark score.</p>
+
+          <p>For multi-turn jailbreak detection we show that the standard generic-benign split admits a
+          large topical shortcut (a first-turn topic probe alone reaches 0.87 AUROC), and then hold the
+          reader to topic-matched benign twins, naturally occurring sensitive conversations, over-refusal
+          cases, and three unseen attack families; on the twins the frozen structured state reaches 0.84
+          AUROC against 0.71 for a capacity-matched dense reader over the same jointly trained encoder.
+          For agent action authorization, a single operating point selected only on InjecAgent transfers
+          to a live same-harness AgentDojo evaluation at 6.1% targeted attack success and 74.2% benign
+          utility (and 1.9% / 70.9% at a high-security threshold), and remains effective across suites,
+          attacks, and a change of agent model.</p>
+
+          <p>The representation is frozen throughout: across held-out hard negatives, attack families,
+          live agent environments, and agent-model changes, the same state is reused without
+          representation retraining. Controls rule out shortcut and encoder-only explanations, and matched
+          occlusions and retrains show each task draws on the semantic and relational channels of the
+          state to a different degree.</p>
+        </div>
+      </section>
+
+      <section id="bibtex">
+        <h2 class="section">BibTeX</h2>
+        <pre class="bibtex">@misc{joseph2026conversation,
+  title  = {What Is a Conversation Made Of? A Reusable Semantic--Relational State Across Safety Tasks},
+  author = {Joseph Harry, Raymond and Mao, Yixin and Wu, Chien-Sheng},
+  year   = {2026},
+  note   = {Preprint, Salesforce AI Research},
+  url    = {https://hraymondjoseph.github.io/papers/conversation-semantic-state/}
+}</pre>
+      </section>
+    </article>
+
+    <footer>
+      <p>© <span id="yr"></span> Raymond Joseph · Built as a static site, hosted on GitHub Pages.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const root = document.documentElement, tbtn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('theme');
+    if (saved) root.setAttribute('data-theme', saved);
+    const sync = () => tbtn.textContent = root.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+    sync();
+    tbtn.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      sync();
+    });
+  </script>
+</body>
+</html>

@@ -145,6 +145,24 @@ h2.section {
 
 .note { color: var(--muted); font-size: 14px; font-style: italic; }
 
+/* ---------- Paper landing page ---------- */
+.paper-venue { color: var(--muted); font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 8px; }
+.paper-title { font-size: 30px; line-height: 1.25; margin: 0 0 10px; letter-spacing: .2px; }
+.paper-authors { font-size: 17px; color: var(--muted); margin: 0 0 14px; }
+.paper-authors .me { color: var(--fg); font-weight: 700; }
+.abstract p { margin: 0 0 14px; }
+.bibtex {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
 footer { text-align: center; color: var(--muted); font-size: 13px; padding: 40px 0 0; border-top: 1px solid var(--border); margin-top: 40px; }
 
 /* ---------- Responsive ---------- */
